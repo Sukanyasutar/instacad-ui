@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>InstaCAD Solutions | Engineering Software Excellence</title>
+    <meta name="title" content="InstaCAD Solutions | Engineering Software Excellence">
+    <meta name="description" content="Leading provider of engineering software solutions, CAD automation tools, and design services since 1990. Innovating engineering workflows worldwide.">
+    <meta name="keywords" content="CAD software, engineering design, drafting automation, BIM solutions, industrial design, engineering services, software development">
+    <meta name="author" content="InstaCAD Solutions (India) Pvt. Ltd.">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://instacad.in/">
+    <meta property="og:title" content="InstaCAD Solutions | Engineering Software Excellence">
+    <meta property="og:description" content="Leading provider of engineering software solutions, CAD automation tools, and design services since 1990.">
+    <meta property="og:image" content="https://instacad.in/assets/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://instacad.in/">
+    <meta property="twitter:title" content="InstaCAD Solutions | Engineering Software Excellence">
+    <meta property="twitter:description" content="Leading provider of engineering software solutions, CAD automation tools, and design services since 1990.">
+    <meta property="twitter:image" content="https://instacad.in/assets/images/twitter-image.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://instacad.in/">
+    
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0099cc">
+    <meta name="msapplication-TileColor" content="#0099cc">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Preconnect for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="/src/index.css" as="style">
+    <link rel="preload" href="/src/main.tsx" as="script">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "InstaCAD Solutions (India) Pvt. Ltd.",
+      "url": "https://instacad.in",
+      "logo": "https://instacad.in/assets/images/logo.svg",
+      "description": "Engineering software development and CAD automation solutions provider",
+      "foundingDate": "1990",
+      "founder": {
+        "@type": "Person",
+        "name": "InstaCAD Team"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Thane",
+        "addressRegion": "Maharashtra",
+        "addressCountry": "IN"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-8779600550",
+        "contactType": "customer service",
+        "email": "instacad@instacad.in",
+        "availableLanguage": ["English", "Hindi"]
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/instacad",
+        "https://twitter.com/instacad",
+        "https://facebook.com/instacad"
+      ]
+    }
+    </script>
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- Apple Splash Screen (for iOS devices) -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="InstaCAD">
+    
+    <!-- Windows Tiles -->
+    <meta name="msapplication-config" content="/browserconfig.xml">
+    
+    <!-- Dark/Light mode detection -->
+    <script>
+      // Check for dark mode preference
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+    </script>
+  </head>
+  
+  <body class="font-sans antialiased text-gray-900 bg-gradient-to-br from-gray-50 to-white">
+    <!-- Loading Screen -->
+    <div id="loading" class="fixed inset-0 z-50 flex items-center justify-center bg-white transition-opacity duration-300">
+      <div class="text-center">
+        <div class="w-20 h-20 mx-auto mb-6 relative">
+          <div class="absolute inset-0 border-4 border-instacad-blue/20 rounded-full"></div>
+          <div class="absolute inset-4 border-4 border-instacad-blue border-t-transparent rounded-full animate-spin"></div>
+          <div class="absolute inset-8 bg-instacad-blue rounded-full flex items-center justify-center">
+            <span class="text-white font-bold text-lg">IC</span>
+          </div>
+        </div>
+        <p class="text-gray-600 font-medium">Loading InstaCAD Solutions...</p>
+        <p class="text-sm text-gray-500 mt-2">Engineering Excellence Since 1990</p>
+      </div>
+    </div>
+    
+    <!-- Main App Container -->
+    <div id="root"></div>
+    
+    <!-- No Script Fallback -->
+    <noscript>
+      <div class="min-h-screen flex items-center justify-center bg-gray-50 px-4">
+        <div class="max-w-md text-center">
+          <div class="w-16 h-16 bg-instacad-blue rounded-xl flex items-center justify-center mx-auto mb-6">
+            <span class="text-white font-bold text-xl">IC</span>
+          </div>
+          <h1 class="text-2xl font-bold text-gray-900 mb-4">JavaScript Required</h1>
+          <p class="text-gray-600 mb-6">
+            InstaCAD Solutions requires JavaScript to function properly. Please enable JavaScript in your browser settings to continue.
+          </p>
+          <div class="space-y-3">
+            <a 
+              href="tel:+918779600550" 
+              class="block px-6 py-3 bg-instacad-blue text-white font-semibold rounded-lg hover:bg-instacad-blue/90 transition-colors"
+            >
+              📞 Call Us: +91-8779600550
+            </a>
+            <a 
+              href="mailto:instacad@instacad.in" 
+              class="block px-6 py-3 border-2 border-instacad-blue text-instacad-blue font-semibold rounded-lg hover:bg-instacad-blue/10 transition-colors"
+            >
+              ✉️ Email: instacad@instacad.in
+            </a>
+          </div>
+          <p class="text-sm text-gray-500 mt-8">
+            InstaCAD Solutions (India) Pvt. Ltd.<br>
+            Thane, Mumbai, India
+          </p>
+        </div>
+      </div>
+    </noscript>
+    
+    <!-- Performance monitoring (optional) -->
+    <script>
+      // Remove loading screen when page loads
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          const loading = document.getElementById('loading');
+          if (loading) {
+            loading.style.opacity = '0';
+            setTimeout(() => loading.style.display = 'none', 300);
+          }
+        }, 500);
+      });
+      
+      // Fallback if load event doesn't fire
+      setTimeout(function() {
+        const loading = document.getElementById('loading');
+        if (loading) {
+          loading.style.opacity = '0';
+          setTimeout(() => loading.style.display = 'none', 300);
+        }
+      }, 3000);
+    </script>
+    
+    <!-- Main script -->
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
